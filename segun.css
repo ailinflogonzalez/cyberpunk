@@ -1,0 +1,76 @@
+main p {
+  color: #ffffff;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.plot_txt {
+  padding-top: 6%;
+    margin-right: 10%;
+  margin-left: 10%;
+}
+
+main img {
+  float: left;
+  padding-right: 15px;
+}
+
+/*Neon*/
+
+hr {
+  animation: neon1 2.5s ease-in-out infinite alternate;
+}
+
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    box-shadow: 0 0 10px #FE6058, 0 0 20px #FE6058, 0 0 30px #FE6058, 0 0 40px #DF5048,
+      0 0 70px #DF5048, 0 0 80px #DF5048, 0 0 100px #DF5048, 0 0 150px #DF5048;
+  }
+  to {
+    box-shadow: 0 0 5px #FE6058, 0 0 10px #FE6058, 0 0 15px #FE6058, 0 0 20px #DF5048,
+      0 0 35px #DF5048, 0 0 40px #DF5048, 0 0 50px #DF5048, 0 0 75px #DF5048;
+  }
+}
+
+/*Make stuff responsive*/
+
+@media (max-width: 650px) {
+  hr {
+    font-size: 3.5em;
+  }
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 6% 0;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+.row {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  /*overflow: hidden;*/
+}
+
+.column {
+  flex: 33.33%;
+  padding: 3px;
+}
+
+.column img {
+    transition: transform 1.2s;
+}
+
+.column img:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,120 @@
+body {
+  height: 100%;
+  background-color: #000000;
+/*  background: repeating-linear-gradient( queda mejor con color solido
+      45deg,
+      #c8b029 0%,
+      #000000 0%,
+      #c8b029 10%,
+      #000000 50%
+    )
+    0 / 15px 15px;*/
+}
+
+#container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+*{
+    /*box-sizing: inherit;*/
+    font-family: 'Exo';
+}
+
+.nav_menu {
+    align-self: center;
+    /*display: flex;*/
+    margin: 0 auto;
+    max-height: 55px;
+    position: absolute;
+    top: 3px;
+    width: 90%;
+    padding-left: 16px;
+}
+
+
+.nav_menu button {
+    transition: all 1.5s ease 0s;
+    background: rgb(0 0 0);
+    border: 2px solid rgb(84,222,229);
+    color: rgb(84,222,229);
+    cursor: pointer;
+    height: 55px;
+    letter-spacing: 2px;
+    line-height: normal;
+    outline: none;
+    padding: 0px 22px;
+    position: relative;
+    text-transform: uppercase;
+    width: 24%;
+}
+
+.nav_menu button:hover {
+    background: rgb(0 0 0);
+    border: 2px solid rgb(84,222,229);
+    color: rgb(84,222,229);
+    cursor: pointer;
+    height: 55px;
+    letter-spacing: 15px;
+    line-height: normal;
+    outline: none;
+    padding: 0px 22px;
+    position: relative;
+    text-transform: uppercase;
+    width: 24%;
+}
+
+.nav_bar .box__label {
+    align-items: center;
+    background-color: rgb(0 0 0);
+    bottom: -8px;
+    color: rgb(205 205 205);
+    display: flex;
+    font-size: 8px;
+    height: 16px;
+    justify-content: center;
+    letter-spacing: 2px;
+    padding: 0 4px;
+    position: absolute;
+    right: 9px;
+}
+
+.nav_bar {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(84,222,229);
+}
+
+
+.nav_menu button:not(.active):first-child i {
+    background-color: rgb(0 0 0);
+    border-bottom: 2px solid rgb(84,222,229);
+    bottom: -12px;
+    height: 22px;
+    left: -12px;
+    position: absolute;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    width: 24px;
+}
+
+.nav_menu button:not(.active):last-child i {
+    background-color: rgb(0 0 0);
+    border-bottom: 2px solid rgb(84,222,229);
+    height: 21px;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 24px;
+} 
+

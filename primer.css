@@ -1,0 +1,19 @@
+main p {
+  color: #ffffff;
+  font-size: 0.9em;
+  width: 70%;
+}
+
+.gameplay_txt {
+  padding-top: 6%;
+    margin-right: 10%;
+  margin-left: 10%;
+}
+
+main img {
+  float: right;
+}
+
+h2 {
+  color: #FFFFFF;
+}
